@@ -1,0 +1,12 @@
+.app-main.app-theme {
+  color: #1DA1F2;
+}
+
+.app-search-input.app-theme {
+  border-color: #1DA1F2;
+}
+
+.app-search-button.app-theme {
+  background: #1DA1F2;
+  color: #fff;
+}

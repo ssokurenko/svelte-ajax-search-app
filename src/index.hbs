@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset='utf8'>
+	<meta name='viewport' content='width=device-width'>
+	<title>Svelte AJAX app</title>
+</head>
+
+<body>
+  {{!--  For development environment we add the container and the main app file, styles loaded inline by the dev server --}}
+  {{#if htmlWebpackPlugin.options.isDevelopment}}
+    <div id="svelte-container"></div>
+    <script src='app.js'></script>
+  {{/if}}
+
+  {{!--  For proudction we just load the bootstrap loader script which dynamically appends all required assets: dom container and app.js which includes compiled code and styles --}}
+  {{#if htmlWebpackPlugin.options.isProduction}}
+    <script src='app-bootstrap.js' defer></script>
+  {{/if}}
+	
+</body>
+
+</html>
