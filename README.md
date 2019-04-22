@@ -25,6 +25,13 @@ npm start
 ```
 The local dev server will be available at [http://localhost:8080/](http://localhost:8080).
 
+## Build
+
+```
+npm run build
+```
+
+The output artifacts could be found at the `/public` folder.
 
 ## Live demo
 [https://svelte-ajax.surge.sh/](https://svelte-ajax.surge.sh)
